@@ -1,0 +1,14 @@
+<h1>List of Users</h1>
+<input type="text" class="form-control" #contact (input)="searchContact(contact.value)">
+<div class='container'>
+    <div class="row">
+        <div class="col-lg-12" *ngFor="let user of users">
+            <div>ID: {{user.id }}</div>
+            <div>Name: {{ user.name }}</div>
+            <div>Surname: {{ user.surname }}</div>
+            <div>Email: {{ user.email }}</div>
+            <div>WebSite: {{ user.website}}</div>
+            <hr>
+        </div>
+    </div>
+</div>
